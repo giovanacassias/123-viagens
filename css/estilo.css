@@ -1,0 +1,440 @@
+html, body{
+    height: 100vh;
+    width: 480px;
+}
+
+body{
+    background-color: #f8f6f7;
+    width: 480px;
+    height: 100%;
+}
+
+header{
+    height: 70%;
+    width: 100%;
+    background-image: url(../img/barcos.webp);
+    background-size: cover;
+    background-position: 75%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+}
+
+nav{
+    position: fixed;
+}
+
+#container{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 8%;
+}
+
+#container-nav{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo{
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    width: 50%;
+    margin-left: 2rem;
+}
+
+#number-1{
+    color: #f35926;
+}
+
+#number-2{
+    color: #fcb929;
+}
+
+#number-3{
+    color: #00b049;
+}
+
+/*alinhas 'viagens' com números*/
+
+#viagens{
+    margin-top: 8px;
+    font-size: .8rem;
+}
+
+.menu{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .8rem;
+    width: 50%;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+#container-form{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+#form{
+    background-color: white;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div > h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+input{
+    padding: 5px;
+    width: 45%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: 1px solid rgb(185, 182, 182);
+ }
+
+ #buscar-voo{
+    display: block;
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ea3d35;
+    color: white;
+    font-size: .7rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00000075;
+}
+
+#buscar-voo:hover{
+    background-color: #8b2621;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+
+#voos-desconto{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    gap: 1.1rem;
+    padding: 1.2rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 170px;
+    width: 180px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+article{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.799);
+    background-position: 35%;
+    align-items: center;  
+}
+
+article > h3{
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#rio{
+    background-image:url(../img/rio.webp); 
+}
+
+#bonito{
+    background-image:url(../img/bonito.webp);
+}
+
+#sao-paulo{
+    background-image:url(../img/sao-paulo.webp);
+}
+
+#foz{
+    background-image:url(../img/foz.webp);
+}
+
+#maceio{
+    background-image:url(../img/maceio.webp);
+}
+
+#salvador{
+    background-image:url(../img/salvador.webp);
+}
+
+#fortaleza{
+    background-image:url(../img/fortaleza.webp);
+}
+
+#bh{
+    background-image:url(../img/belo-horizonte.webp);
+}
+
+.valor{
+    font-size: .8rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.799);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ver-mais{
+    text-align: center;
+    border-radius: 20px;
+    font-size: .5rem;
+    padding: 8px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+    width: 50%;
+}
+
+/*tablets*/
+
+@media (min-width: 481px) and (max-width: 768px){
+    html, body{
+        width: 100%;
+    }
+
+    .cards{
+        height: 150px;
+        width: 170px;
+        gap: 0.5rem;
+    }
+
+    .logo{
+        font-size: 1.6rem;
+    }
+}
+
+/*laptops*/
+@media (min-width: 769px) and (max-width: 1023px){
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    main{
+        height: 85%;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    #viagens{
+        font-size: 1rem;
+    }
+
+    .menu{
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #container-form{
+        height: 70%;
+
+    }
+
+    #form{
+        display: inline-block;
+    }
+
+    #buscar-voo{
+        display: inline-flex;
+        width: 115px;
+        justify-content: center;
+        font-size: .7rem;
+        margin-right: 5px;
+    }
+
+    input{
+        width: 100px;
+        margin-top: 0px;
+        padding: 8px;
+        margin-left: 5px;
+    }
+
+    #voos-desconto{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    article > h3{
+        font-size: 1.1rem;
+    }
+
+    .valor{
+        font-size: 1.5rem;
+    }
+    
+    .ver-mais{
+        font-size: .7rem;
+    }
+}
+
+/*desktops*/
+@media (min-width: 1024px){
+
+    html, body{
+        height: 100vh;
+        width: 100%;  
+    }
+    
+    header{
+        height: 70%;
+        width: 100%;
+        background-image: url(../img/barcos.webp);
+        background-size: cover;
+        background-position: 75%;
+    }
+
+    main{
+        width: 1024px;
+        margin: auto;
+        height: 100%;
+        padding: 0px;
+    }
+    
+    #container{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        height:8%;
+    }
+    
+    #container-nav{
+        width: 1024px;
+        padding: 0;
+    }
+    
+    .logo{
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2.2rem;
+        margin: 0;
+       
+    }
+
+    #viagens{
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+    
+    .menu{
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+        width: 50%;
+        gap: 3rem;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #container-form{
+        width: 1024px;
+        height: 80%;
+
+    }
+
+    #form{
+        width: 100%;
+        padding: .9rem;
+    }
+
+    #buscar-voo{
+        display: inline-flex;
+        width: 190px;
+        justify-content: center;
+        font-size: .8rem;
+        margin-right: 5px;
+    }
+
+    input{
+        width: 190px;
+        margin-top: 0px;
+        padding: 8px;
+        margin-left: 5px;
+    }
+    
+    #voos-desconto{
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+
+    
+
+    .cards{
+        height: 180px;
+        width: 230px;
+    }
+
+    article > h3{
+        font-size: 1.2rem;
+    }
+    
+    .valor{
+        font-size: 1.8rem;
+    }
+    
+    .ver-mais{
+        font-size: .9rem;
+    }  
+}
